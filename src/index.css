@@ -1,68 +1,52 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&family=RocknRoll+One&display=swap");
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@layer base {
+  *,
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
   }
-  a:hover {
-    color: #747bff;
+  a {
+    @apply font-secundary text-[1.44rem];
   }
-  button {
-    background-color: #f9f9f9;
+  p {
+    @apply font-secundary text-[1rem];
   }
+  h1 {
+    @apply font-primary text-[4.125rem];
+  }
+  h2 {
+    @apply font-secundary text-[3.250rem];
+  }
+  h3 {
+    @apply font-secundary text-[2.785rem];
+  }
+  h4 {
+    @apply font-secundary text-[2.250rem];
+  }
+  h5 {
+    @apply font-secundary text-[2rem];
+  }
+  h6 {
+    @apply font-secundary text-[1.625rem];
+  }
+}
+
+@layer components {
+  .home-section {
+    @apply bg-home w-full h-screen flex items-center;
+  }
+  .home-description {
+    @apply flex flex-col gap-y-[1rem] ml-[4rem];
+  }
+}
+
+@layer utilities {
 }

@@ -14,13 +14,13 @@
     font-size: 16px;
   }
   a {
-    @apply font-secundary text-[1.44rem];
+    @apply font-secundary lg:text-[1.44rem];
   }
   p {
     @apply font-secundary text-[1rem];
   }
   h1 {
-    @apply font-primary text-[4.125rem];
+    @apply font-primary text-[2.250rem] md:text-[2.925rem] lg:text-[4.125rem];
   }
   h2 {
     @apply font-secundary text-[3.250rem];
@@ -32,10 +32,13 @@
     @apply font-secundary text-[2.250rem];
   }
   h5 {
-    @apply font-secundary text-[2rem];
+    @apply font-secundary text-[1.44rem] md:text-[1.63rem] lg:text-[2rem];
   }
   h6 {
-    @apply font-secundary text-[1.625rem];
+    @apply font-secundary text-[1.225rem]  md:text-[1.375rem] lg:text-[1.625rem];
+  }
+  header {
+    @apply w-full py-[1.35rem] px-[1rem] absolute bg-jet/50 backdrop-blur-[10px] flex items-center justify-between;
   }
 }
 
@@ -44,7 +47,7 @@
     @apply bg-home w-full h-screen flex items-center;
   }
   .home-description {
-    @apply flex flex-col gap-y-[1rem] ml-[4rem];
+    @apply flex flex-col gap-y-[1rem] ml-[1.5rem] md:ml-[4rem];
   }
 }
 

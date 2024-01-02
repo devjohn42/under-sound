@@ -14,7 +14,7 @@
     font-size: 16px;
   }
   a {
-    @apply font-secundary lg:text-[1.44rem];
+    @apply font-secundary text-[1.05rem] lg:text-[1.25rem];
   }
   p {
     @apply font-secundary text-[1rem];
@@ -38,11 +38,26 @@
     @apply font-secundary text-[1.225rem]  md:text-[1.375rem] lg:text-[1.625rem];
   }
   header {
-    @apply w-full py-[1.35rem] px-[1rem] absolute bg-jet/50 backdrop-blur-[10px] flex items-center justify-between;
+    @apply w-full fixed top-0;
+  }
+  nav {
+    @apply flex flex-col items-center md:flex-row gap-y-5 md:gap-x-8;
   }
 }
 
 @layer components {
+  .header-container {
+    @apply bg-jet/50 py-[1.25rem] px-[1.25rem] backdrop-blur-[10px] md:flex items-center justify-between;
+  }
+  .header-menu-icon {
+    @apply h-9 w-9 absolute right-5 top-5;
+  }
+  .header-social-container {
+    @apply mb-3 md:mb-0 items-center gap-x-4 md:gap-x-5 lg:gap-x-8;
+  }
+  .header-social-icon {
+    @apply text-white text-[1.625rem] md:text-[1.825rem] lg:text-[2.125rem];
+  }
   .home-section {
     @apply bg-home w-full h-screen flex items-center;
   }
@@ -52,4 +67,8 @@
 }
 
 @layer utilities {
+  .nav-link-hover,
+  .header-social-icon-hover {
+    @apply pointer-events-none md:pointer-events-auto hover:text-pumpkin duration-500 hover:ease-in-out md:cursor-pointer;
+  }
 }

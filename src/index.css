@@ -14,10 +14,10 @@
     font-size: 16px;
   }
   a {
-    @apply font-secundary text-[1.05rem] lg:text-[1.25rem];
+    @apply font-secundary text-[1rem] lg:text-[1.125rem];
   }
   p {
-    @apply font-secundary text-[1rem];
+    @apply font-secundary text-[1rem] md:text-[1.150rem] lg:text-[1.250rem];
   }
   h1 {
     @apply font-primary text-[2.250rem] md:text-[2.925rem] lg:text-[4.125rem];
@@ -29,7 +29,7 @@
     @apply font-secundary text-[2.785rem];
   }
   h4 {
-    @apply font-secundary text-[2.250rem];
+    @apply font-secundary lg:text-[2.250rem];
   }
   h5 {
     @apply font-secundary text-[1.44rem] md:text-[1.63rem] lg:text-[2rem];
@@ -63,6 +63,15 @@
   }
   .home-description {
     @apply flex flex-col gap-y-[1rem] ml-[1.5rem] md:ml-[4rem];
+  }
+  .about-section {
+    @apply bg-eerie w-full p-[3.5rem_2rem] flex flex-col md:flex-row items-center justify-evenly gap-y-8;
+  }
+  .about-content {
+    @apply w-[325px] sm:w-[380px] md:w-[440px] md:mr-[2rem] flex flex-col gap-y-2;
+  }
+  .about-image {
+    @apply bg-about w-[325px] sm:w-[380px] md:w-[460px] h-[200px] md:h-[270px] bg-cover rounded-[8px] border-pumpkin border-[2px];
   }
 }
 

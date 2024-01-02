@@ -40,7 +40,7 @@ const Header = () => {
           }`}
         >
           <a href="#" className="text-white nav-link-hover">
-            <a href="/">Início</a>
+            Início
           </a>
           <a href="#" className="text-white nav-link-hover">
             Sobre

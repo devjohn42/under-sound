@@ -13,11 +13,15 @@
     box-sizing: border-box;
     font-size: 16px;
   }
+  body,
+  html {
+    background-color: #1b1b1b;
+  }
   a {
     @apply font-secundary text-[1rem] lg:text-[1.125rem];
   }
   p {
-    @apply font-secundary text-[1rem] md:text-[1.150rem] lg:text-[1.250rem];
+    @apply font-secundary text-[1rem];
   }
   h1 {
     @apply font-primary text-[2.250rem] md:text-[2.925rem] lg:text-[4.125rem];
@@ -35,7 +39,7 @@
     @apply font-secundary text-[1.44rem] md:text-[1.63rem] lg:text-[2rem];
   }
   h6 {
-    @apply font-secundary text-[1.225rem]  md:text-[1.375rem] lg:text-[1.625rem];
+    @apply font-secundary text-[1.225rem]  md:text-[1.375rem] lg:text-[1.425rem];
   }
   header {
     @apply w-full fixed top-0;
@@ -59,13 +63,13 @@
     @apply text-white text-[1.625rem] md:text-[1.825rem] lg:text-[2.125rem];
   }
   .home-section {
-    @apply bg-home w-full h-screen flex items-center;
+    @apply bg-home bg-cover w-full h-screen flex items-center;
   }
   .home-description {
     @apply flex flex-col gap-y-[1rem] ml-[1.5rem] md:ml-[4rem];
   }
   .about-section {
-    @apply bg-eerie w-full p-[3.5rem_2rem] flex flex-col md:flex-row items-center justify-evenly gap-y-8;
+    @apply w-full p-[3.5rem_2rem] flex flex-col md:flex-row items-center justify-evenly gap-y-8;
   }
   .about-content {
     @apply w-[325px] sm:w-[380px] md:w-[440px] md:mr-[2rem] flex flex-col gap-y-2;

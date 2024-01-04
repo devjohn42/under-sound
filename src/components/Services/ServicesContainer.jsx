@@ -1,11 +1,13 @@
 import React from "react";
 import ServiceBox from "./ServiceBox";
 
+import { motion } from "framer-motion";
 import { services } from "../../data/services";
+import { animations } from "../../data/animations";
 
 const ServicesContainer = () => {
   return (
-    <div className="services-container">
+    <motion.div className="services-container" {...animations.leftToRight}>
       {services.map((service, index) => (
         <ServiceBox
           key={index}
@@ -13,7 +15,7 @@ const ServicesContainer = () => {
           description={service.description}
         />
       ))}
-    </div>
+    </motion.div>
   );
 };
 

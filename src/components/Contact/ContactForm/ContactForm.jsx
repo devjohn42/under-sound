@@ -3,9 +3,12 @@ import { Input } from "./Input";
 import { Textarea } from "./Textarea";
 import { DevLink } from "../../global/DevLink";
 
+import { motion } from "framer-motion";
+import { animations } from "../../../data/animations";
+
 const ContactForm = () => {
   return (
-    <form>
+    <motion.form {...animations.rightToLeft}>
       <div className="contact-form-inputs-container">
         <Input
           className="contact-form-input"
@@ -26,7 +29,7 @@ const ContactForm = () => {
           </button>
         </DevLink>
       </div>
-    </form>
+    </motion.form>
   );
 };
 

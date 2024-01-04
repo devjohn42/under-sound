@@ -4,9 +4,12 @@ import { BsCalendar2CheckFill } from "react-icons/bs";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import { DevLink } from "../global/DevLink";
 
+import { motion } from "framer-motion";
+import { animations } from "../../data/animations";
+
 const ContactBox = () => {
   return (
-    <div className="contact-box-container">
+    <motion.div className="contact-box-container" {...animations.leftToRight}>
       <div className="flex items-center justify-center gap-x-[20px]">
         <BsCalendar2CheckFill className="text-pumpkin text-[2.25rem]" />
         <h6 className="text-white">Não perca tempo!!</h6>
@@ -25,7 +28,7 @@ const ContactBox = () => {
           <FaInstagram className="contact-box-call-icon" />
         </DevLink>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

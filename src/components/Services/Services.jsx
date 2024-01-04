@@ -4,7 +4,7 @@ import ServicesContainer from "./ServicesContainer";
 
 const Services = () => {
   return (
-    <section className="services-section">
+    <section className="services-section" id="services">
       <div className="flex gap-x-4">
         <h5 className="text-white">Serviços da </h5>
         <div className="flex gap-x-3">

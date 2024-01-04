@@ -124,7 +124,7 @@
     @apply bg-black/50 p-[0.625rem_2.5rem] rounded-[0.5rem] text-white/40 text-[0.875rem] md:text-[19px] font-secundary;
   }
   .footer-nav {
-    @apply flex flex-row items-center gap-x-4
+    @apply flex flex-row items-center gap-x-4;
   }
 }
 
@@ -133,7 +133,7 @@
   .header-social-icon-hover,
   .contact-social-icon-hover,
   .footer-link-hover {
-    @apply pointer-events-auto hover:text-pumpkin duration-500 hover:ease-in-out md:cursor-pointer;
+    @apply pointer-events-auto lg:hover:text-pumpkin duration-500 hover:ease-in-out cursor-pointer;
   }
   .contact-form-button-hover {
     @apply hover:text-pumpkin hover:bg-black/90 md:hover:cursor-pointer hover:drop-shadow-none duration-[0.4s];

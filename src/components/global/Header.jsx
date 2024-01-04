@@ -5,14 +5,16 @@ import { LuCassetteTape } from "react-icons/lu";
 import { MdClose } from "react-icons/md";
 import { DevLink } from "./DevLink";
 
+import { Link } from "react-scroll";
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // const changeNav = () => {
-  //   if (window.innerWidth < 768) {
-  //     setNavOpen(!navOpen);
-  //   }
-  // };
+  const changeNav = () => {
+    if (window.innerWidth < 768) {
+      setMenuOpen(!menuOpen);
+    }
+  };
 
   return (
     <header>
@@ -40,18 +42,46 @@ const Header = () => {
               : "hidden md:flex"
           }`}
         >
-          <a href="#" className="text-white nav-link-hover">
+          <Link
+            className="text-white nav-link-hover"
+            to="home"
+            smooth={true}
+            spy={true}
+            offset={0}
+            onClick={() => changeNav()}
+          >
             Início
-          </a>
-          <a href="#" className="text-white nav-link-hover">
+          </Link>
+          <Link
+            className="text-white nav-link-hover"
+            to="about"
+            smooth={true}
+            spy={true}
+            offset={-100}
+            onClick={() => changeNav()}
+          >
             Sobre
-          </a>
-          <a href="#" className="text-white nav-link-hover">
+          </Link>
+          <Link
+            className="text-white nav-link-hover"
+            to="services"
+            smooth={true}
+            spy={true}
+            offset={-100}
+            onClick={() => changeNav()}
+          >
             Serviços
-          </a>
-          <a href="#" className="text-white nav-link-hover">
+          </Link>
+          <Link
+            className="text-white nav-link-hover"
+            to="contact"
+            smooth={true}
+            spy={true}
+            offset={-100}
+            onClick={() => changeNav()}
+          >
             Contato
-          </a>
+          </Link>
         </nav>
         <div
           className={`header-social-container ${

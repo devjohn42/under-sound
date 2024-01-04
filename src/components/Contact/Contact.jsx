@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm/ContactForm";
 
 const Contact = () => {
   return (
-    <section className="contact-section">
+    <section className="contact-section contact">
       <h5 className="text-white">Entre em Contato</h5>
       <div className="contact-container">
         <ContactBox />

@@ -1,10 +1,11 @@
 import React from "react";
-import { services } from "../../data/services";
 import ServiceBox from "./ServiceBox";
 
-const ServicesContainer = ({ children }) => {
+import { services } from "../../data/services";
+
+const ServicesContainer = () => {
   return (
-    <div className="w-[90%] md:w-full lg:w-[90%] p-[0rem_1rem] flex flex-row flex-wrap items-start justify-center gap-[20px]">
+    <div className="services-container">
       {services.map((service, index) => (
         <ServiceBox
           key={index}

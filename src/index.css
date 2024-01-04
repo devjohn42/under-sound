@@ -77,11 +77,21 @@
   .about-image {
     @apply bg-about w-[325px] sm:w-[380px] md:w-[460px] h-[200px] md:h-[270px] bg-cover rounded-[8px] border-pumpkin border-[2px];
   }
+  .services-section {
+    @apply bg-services bg-cover w-full p-[3.15rem_0rem] flex flex-col items-center gap-y-[50px];
+  }
+  .services-container {
+    @apply w-[90%] md:w-full lg:w-[90%] p-[0rem_1rem] flex flex-row flex-wrap items-start justify-center gap-[20px];
+  }
+  .service-box {
+    @apply bg-eerie/60 md:w-[350px] lg:w-[420px] md:h-[280px] lg:h-[260px] backdrop-blur-[5px] rounded-[8px] p-[1rem_1.25rem];
+  }
 }
 
 @layer utilities {
   .nav-link-hover,
-  .header-social-icon-hover {
+  .header-social-icon-hover,
+  .contact-social-icon-hover {
     @apply pointer-events-none md:pointer-events-auto hover:text-pumpkin duration-500 hover:ease-in-out md:cursor-pointer;
   }
 }

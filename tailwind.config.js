@@ -20,9 +20,9 @@ export default {
         pumpkin: "#FF812D",
       },
       backgroundImage: {
-        home: "url('./home-tapes.png')",
-        about: "url('./about-studio.png')",
-        services: "url('./services-mic.png')",
+        home: "url('/home-tapes.png')",
+        about: "url('/about-studio.png')",
+        services: "url('/services-mic.png')",
       },
     },
   },

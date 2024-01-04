@@ -136,6 +136,6 @@
     @apply pointer-events-auto lg:hover:text-pumpkin duration-500 hover:ease-in-out cursor-pointer;
   }
   .contact-form-button-hover {
-    @apply hover:text-pumpkin hover:bg-black/90 md:hover:cursor-pointer hover:drop-shadow-none duration-[0.4s];
+    @apply hover:bg-black/90  lg:hover:text-pumpkin md:hover:cursor-pointer duration-[0.4s];
   }
 }

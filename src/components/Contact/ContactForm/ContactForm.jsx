@@ -24,9 +24,9 @@ const ContactForm = () => {
       <Textarea className="contact-form-textarea" placeholder="Mensagem" />
       <div className="w-full flex items-start">
         <DevLink>
-          <button className="contact-form-button contact-form-button-hover">
+          <a className="contact-form-button contact-form-button-hover">
             Enviar
-          </button>
+          </a>
         </DevLink>
       </div>
     </motion.form>

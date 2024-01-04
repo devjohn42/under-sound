@@ -47,6 +47,19 @@
   nav {
     @apply flex flex-col items-center md:flex-row gap-y-5 md:gap-x-8;
   }
+  form {
+    @apply flex flex-col items-center gap-y-4;
+  }
+  input {
+    @apply bg-black/50 w-[320px] sm:w-[370px] md:w-[300px]
+    h-[40px] sm:h-[45px] md:h-[50px] rounded-[0.5rem] 
+    outline-none pl-4 text-white font-secundary placeholder:text-white/40 
+    placeholder:font-secundary placeholder:font-light 
+    placeholder:text-[0.875rem] text-[0.875rem] md:placeholder:text-[19px] md:text-[19px];
+  }
+  textarea {
+    @apply bg-black/50 w-[320px] sm:w-[370px] md:w-[650px] h-[250px] md:h-[270px] lg:w-[650px]  resize-none rounded-[0.5rem] outline-none text-white font-secundary pl-4 pt-4 placeholder:text-white/40 placeholder:font-secundary placeholder:font-light placeholder:text-[0.875rem] text-[0.875rem] md:placeholder:text-[19px] md:text-[19px];
+  }
 }
 
 @layer components {
@@ -86,6 +99,27 @@
   .service-box {
     @apply bg-eerie/60 md:w-[350px] lg:w-[420px] md:h-[280px] lg:h-[260px] backdrop-blur-[5px] rounded-[8px] p-[1rem_1.25rem];
   }
+  .contact-section {
+    @apply w-full p-[2rem_0rem] flex flex-col gap-y-4 items-center;
+  }
+  .contact-container {
+    @apply w-full p-[1.25rem_0rem] flex flex-col xl:flex-row gap-y-8 items-center justify-around;
+  }
+  .contact-box-container {
+    @apply bg-black/50 w-[320px] sm:h-[330px] md:h-[395.5px] sm:w-[370px] md:w-[400px] p-[1.25rem_1rem] flex flex-col items-center justify-evenly rounded-[8px];
+  }
+  .contact-box-description {
+    @apply w-[300px] sm:w-[320px] text-white text-center p-[1rem_1.25rem] md:p-[0rem];
+  }
+  .contact-box-call-icon {
+    @apply text-[1.9rem] md:text-[2.5rem] text-white contact-social-icon-hover;
+  }
+  .contact-form-inputs-container {
+    @apply flex flex-col md:flex-row gap-y-[10px] md:gap-x-[50px] md:justify-between;
+  }
+  .contact-form-button {
+    @apply bg-black/50 p-[0.625rem_2.5rem] rounded-[0.5rem] text-white/40 text-[0.875rem] md:text-[19px] font-secundary;
+  }
 }
 
 @layer utilities {
@@ -93,5 +127,8 @@
   .header-social-icon-hover,
   .contact-social-icon-hover {
     @apply pointer-events-none md:pointer-events-auto hover:text-pumpkin duration-500 hover:ease-in-out md:cursor-pointer;
+  }
+  .contact-form-button-hover {
+    @apply hover:text-pumpkin hover:bg-black/90 md:hover:cursor-pointer hover:drop-shadow-none duration-[0.4s];
   }
 }

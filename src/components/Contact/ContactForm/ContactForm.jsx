@@ -1,6 +1,7 @@
 import React from "react";
 import { Input } from "./Input";
 import { Textarea } from "./Textarea";
+import { DevLink } from "../../global/DevLink";
 
 const ContactForm = () => {
   return (
@@ -19,13 +20,11 @@ const ContactForm = () => {
       </div>
       <Textarea className="contact-form-textarea" placeholder="Mensagem" />
       <div className="w-full flex items-start">
-        <a
-          className="contact-form-button contact-form-button-hover"
-          href="#"
-          target="_blank"
-        >
-          Enviar
-        </a>
+        <DevLink>
+          <button className="contact-form-button contact-form-button-hover">
+            Enviar
+          </button>
+        </DevLink>
       </div>
     </form>
   );

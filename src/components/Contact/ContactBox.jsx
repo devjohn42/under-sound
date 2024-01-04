@@ -2,6 +2,7 @@ import React from "react";
 
 import { BsCalendar2CheckFill } from "react-icons/bs";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import { DevLink } from "../global/DevLink";
 
 const ContactBox = () => {
   return (
@@ -17,8 +18,12 @@ const ContactBox = () => {
         mesmo para possíveis parcerias!!
       </p>
       <div className="flex gap-x-[15px]">
-        <FaWhatsapp className="contact-box-call-icon" />
-        <FaInstagram className="contact-box-call-icon" />
+        <DevLink>
+          <FaWhatsapp className="contact-box-call-icon" />
+        </DevLink>
+        <DevLink>
+          <FaInstagram className="contact-box-call-icon" />
+        </DevLink>
       </div>
     </div>
   );

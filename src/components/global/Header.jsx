@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { FaInstagram, FaSpotify, FaYoutube } from "react-icons/fa6";
 import { LuCassetteTape } from "react-icons/lu";
 import { MdClose } from "react-icons/md";
+import { DevLink } from "./DevLink";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -57,9 +58,15 @@ const Header = () => {
             menuOpen ? "flex flex-row justify-center" : "hidden md:flex"
           }`}
         >
-          <FaYoutube className="header-social-icon header-social-icon-hover" />
-          <FaSpotify className="header-social-icon header-social-icon-hover" />
-          <FaInstagram className="header-social-icon header-social-icon-hover" />
+          <DevLink>
+            <FaYoutube className="header-social-icon header-social-icon-hover" />
+          </DevLink>
+          <DevLink>
+            <FaSpotify className="header-social-icon header-social-icon-hover" />
+          </DevLink>
+          <DevLink>
+            <FaInstagram className="header-social-icon header-social-icon-hover" />
+          </DevLink>
         </div>
       </div>
     </header>

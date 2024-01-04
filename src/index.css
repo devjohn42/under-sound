@@ -76,7 +76,7 @@
     @apply mb-3 md:mb-0 items-center gap-x-4 md:gap-x-5 lg:gap-x-8;
   }
   .header-social-icon {
-    @apply text-white text-[1.625rem] md:text-[1.825rem] lg:text-[2.125rem];
+    @apply text-white text-[2rem];
   }
   .home-section {
     @apply bg-home bg-cover w-full h-screen flex items-center;

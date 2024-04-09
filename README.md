@@ -11,7 +11,7 @@ US Records é um modelo de site projetado para empresas musicais, oferecendo uma
 
 ### 🎙 Visite o Projeto
 
-- Website [US Records](https://devjohncode.vercel.app/)
+- Website [US Records](https://us-records.netlify.app/)
 
 ### 🤝🏻 Contribuições
 
